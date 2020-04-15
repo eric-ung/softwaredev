@@ -19,9 +19,9 @@
 		</div>
 		<div class="body">
 			<div class="mapouter">
-				<div class="gmap_canvas">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.893818215868!2d-80.7359411839359!3d35.308619757922365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!3m2!1sen!2sus!4v1585418896427!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
-				</div>
+				<div class="gmap_canvas" id="map"></div>
+				<div id="legend"><h3>Relative Activity</h3></div>
+				<script src="heatmap.js"></script>
 			</div>
 			<div class="location">
 				<div class="locationInfo">
@@ -43,7 +43,10 @@
 					<img class="union" src="student_union.jpg" height="100%" alt="Student Union">
 				</div>
 			</div>
-		</div>		
+		</div>
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG1hqcwrrmTCuXKkNT5pFqV1XtiEgwPsE&callback=initMap">
+		</script>		
 	</body>
 
 	<div class="Footer">  
