@@ -50,6 +50,21 @@ function initMap() {
 		}
 	});
 
+	var infowindow = new google.maps.InfoWindow();
+
+	map.data.addListener('click', function(event) {
+		//document.getElementById('info-box').textContent = event.feature.getId();
+		// infowindow.setOptions({
+		// 	content: '<div style="width:' + document.getElementById('map').clientWidth + '">' + event.feature.getId() + '</div>',
+		// 	position: event.feature.getGeometry().get()
+		// });
+		// infowindow.open(map)
+		var link = location.href.split('map.html', 1)[0];
+		link = link.concat('locations/', event.feature.getId(), '.html');
+		//console.log(link);
+		location.href = link;
+	});
+
 	var legend = document.getElementById('legend');
 	for (var key in pins) {
 		var div = document.createElement('div');
