@@ -64,18 +64,20 @@ body
 .body
 {
 	width: 85vw;
+	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	background: #295136;
 	border-left: 6px solid #b5a268;
 	border-right: 6px solid #b5a268;
 	font-size: 5vh;
+	text-align: center;
 }
 
 .body a
 {
 	margin-left: 2vw;
-	font-size: 5vh;
+	font-size: 10vh;
 	color: #eee;
 	text-decoration:none;
 	font-family: Verdana, Geneva, sans-serif;
