@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+	
+	<head>
+		<div class="header">
+			<div class="logo">
+				<img class="logo" src="../Logos/logo.png" alt="Uncrowded Logo">
+			</div>
+		</div>
+	</head>
+	
+	<body>
+		<div class="body">
+			<div class="login-page">
+				<script src="https://apis.google.com/js/platform.js" async defer></script>
+				<meta name="google-signin-client_id" content="708128413386-0vue4vv1bqfclloa618nbjfem37kh07m.apps.googleusercontent.com">
+				<script>
+					function signOut() {
+						var auth2 = gapi.auth2.getAuthInstance();
+						auth2.signOut().then(function () {
+							console.log('User signed out.');
+						});
+					}
+				</script>
+				
+				<div class="form">
+					<form class="login-form">
+						<p class="message">Sign in with your <a href="#">NinerNET ID</a></p>
+						<p></p>
+						<input type="text" placeholder="NinerNET ID"/>
+						<input type="password" placeholder="Password"/>
+						<!--<button>login</button> -->
+						<a href="map.html">
+							<div class="fakeButton">
+								<div class="g-signin2" class="fakeButton" data-onsuccess="onSignIn">
+									Login
+								</div>
+							</div>
+						</a>
+						<a href="form.html">
+							<div class="fakeButton">
+								Google Form
+							</div>
+						</a>
+						
+
+
+						
+
+						<a href="#" onclick="signOut();">Sign out</a>
+						
+					</form>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>
+
